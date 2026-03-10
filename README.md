@@ -2,22 +2,18 @@
 
 ## ___*This readme is in progress___
 
-Fonyn is a programming language designed primarily for **game development**.
+Fonyn is a **general-purpose programming language** with strong built-in support for game development.
 
-The goal of Fonyn is to provide a language where common game concepts can be expressed directly and naturally in code.
+The goal of Fonyn is to provide a language where common game concepts can be expressed directly and naturally in code, while still remaining suitable for general-purpose software development.
 
-Instead of forcing game logic into traditional object-oriented structures, Fonyn introduces several first-class concepts designed specifically for games.
-
-Core concepts include:
+Rather than relying on external engines or frameworks, Fonyn provides language-level concepts such as:
 
 - `actor`
 - `state`
 - `action`
 - `process`
-- `template`
-- `contract`
 
-These allow game systems to be expressed in a more natural way.
+Game development features are provided through the standard Fonyn framework, while the language itself remains applicable to a wide range of applications.
 
 ---
 
