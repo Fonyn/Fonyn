@@ -1,188 +1,160 @@
 # Fonyn
 
-## ___*This readme is in progress___
+Fonyn is a **general-purpose programming language**.
 
-Fonyn is a **general-purpose programming language** with strong built-in support for game development.
+It aims to make program structure clearer by explicitly separating the concepts of **entities**, **state**, and **behavior**, and by making each of them reusable.
 
-The goal of Fonyn is to provide a language where common game concepts can be expressed directly and naturally in code, while still remaining suitable for general-purpose software development.
+Fonyn is not designed for a single specific domain.  
+It is intended to be usable for general application development as well.
 
-Rather than relying on external engines or frameworks, Fonyn provides language-level concepts such as:
-
-- `actor`
-- `state`
-- `action`
-- `process`
-
-Game development features are provided through the standard Fonyn framework, while the language itself remains applicable to a wide range of applications.
-
----
-
-# Project Status
-
-⚠️ Fonyn is currently in **early design and prototype stage**.
-
-The language specification is still evolving and the compiler implementation is experimental.
-
-The current implementation is written in **C#**.
+However, this design also works **particularly well for game development**, so we plan to provide a game development framework as part of the standard ecosystem.
 
 ---
 
 # Design Philosophy
 
-Fonyn is built around three key principles:
-```
-actor = individuality
-action = ability
-process = world logic
+Fonyn is built around the following three core concepts.
+
 ```
 
-### actor
-Represents an entity in the world.
+actor   = entity
+state   = reusable data
+action  = reusable behavior
 
-Examples:
+````
 
-- Player
-- Enemy
-- NPC
-- Door
+This model allows programs to express their structure more clearly.
 
-### state
-Represents reusable data attached to actors.
+---
 
-Example:
-```
-state Health
-{
-  int hp;
-  int maxHp;
-}
-```
+# Core Concepts
 
-### action
-Represents reusable abilities that actors can perform.
+Fonyn introduces the following main concepts.
 
-Example:
-```
-action Move needs Transform
-{
-  void move(Vec3 dir)
-  {
-    transform.position += dir;
-  }
-}
-```
+| Concept | Description |
+|--------|-------------|
+| actor | An entity that owns state and behavior |
+| state | A reusable data structure |
+| action | A reusable behavior that can be attached to actors |
+| contract | A capability contract visible from the outside |
+| process | External logic not belonging to an actor |
+| template | A template for creating actors |
 
-### process
-Represents world-level logic that operates across actors.
-
-Example:
-```
-process Physics
-{
-  void update(float dt)
-  {
-    // world update logic
-  }
-}
-```
 ---
 
 # Example
-```
+
+```fonyn
 state Health
 {
-  int hp;
-  int maxHp;
+    int hp
+    int maxHp
 }
 
 action Damage needs Health
 {
-  void takeDamage(int amount)
-  {
-    health.hp -= amount;
-  }
+    void takeDamage(int amount)
+    {
+        health.hp -= amount
+    }
 }
 
 actor Player
 {
-  states: Health;
-  actions: Damage;
+    states: Health
+    actions: Damage
 }
-```
+````
+
+In this example:
+
+* `Health` represents reusable data
+* `Damage` represents reusable behavior
+* `Player` is an entity composed from those parts
+
+---
+
+# Project Status
+
+Fonyn is currently in the **design and prototype stage**.
+
+The language specification is still evolving, and the compiler implementation is experimental.
+
+The current compiler is being developed using **C# / .NET**.
+
 ---
 
 # Repository Structure
+
 ```
 Fonyn/
-├─ src/
-│ ├─ Fonyn.Compiler
-│ └─ Fonyn.Cli
-│
-├─ tests/
-│ └─ Fonyn.Compiler.Tests
-│
-├─ docs/
-│ └─ spec
-│
-├─ examples/
-│
+├─ src/        compiler implementation
+├─ tests/      test code
+├─ docs/       documentation
+├─ examples/   example programs
 └─ README.md
 ```
 
-- `src` – compiler and CLI implementation
-- `tests` – unit tests
-- `docs` – language specification
-- `examples` – sample Fonyn programs
+Main documentation:
+
+* Language specification → `docs/spec`
+* Development roadmap → `docs/roadmap.md`
 
 ---
 
 # Development
 
-Fonyn is implemented using **.NET / C#**.
+The Fonyn compiler is implemented in **C# / .NET**.
 
-Requirements:
+Requirements
+
+```
 .NET SDK
 Git
+```
 
-Build:
+Build
+
+```
 dotnet build
+```
 
+Run tests
 
-Run tests:
+```
 dotnet test
-
+```
 
 ---
 
-# Roadmap
+# Development Roadmap
 
-Planned development stages:
+Planned implementation stages:
 
 1. Lexer
 2. Parser
 3. AST
-4. Semantic analysis
-5. C# code generation
+4. Semantic Analysis
+5. C# Code Generation
 6. Runtime
 
 ---
 
 # Contributing
 
-Contributions are welcome.
+Fonyn is an open source project.
 
-Since the language is still evolving, discussions about language design are especially valuable.
+Contributions are welcome, including:
 
-Feel free to open:
+* Opening issues
+* Language design discussions
+* Pull requests
+* Documentation improvements
 
-- Issues
-- Pull requests
-- Design discussions
+In particular, **discussions about the language design are highly encouraged**.
 
 ---
 
 # License
 
-This project is licensed under the MIT License.
-
----
+MIT License
