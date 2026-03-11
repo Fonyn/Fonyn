@@ -1,5 +1,5 @@
 # Fonyn
-[日本語のREADMEはこちら](docs/README-ja.md)
+[日本語のREADMEはこちら](docs/ja/README-ja.md)
 
 Fonyn is a **general-purpose programming language**.
 
