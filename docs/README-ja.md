@@ -1,48 +1,47 @@
-# Fonyn
+# Fonyn Spec v0.1
+* [English readme is here](#README.md)
+Fonynは**汎用プログラミング言語**です。
 
-Fonyn is a **general-purpose programming language**.
+「実体」「状態」「振る舞い」を明確に分離する設計により、
+それぞれの概念を再利用可能にすることを目指しています。
 
-It aims to make program structure clearer by explicitly separating the concepts of **entities**, **state**, and **behavior**, and by making each of them reusable.
-
-Fonyn is not designed for a single specific domain.  
-It is intended to be usable for general application development as well.
-
-However, this design also works **particularly well for game development**, so we plan to provide a game development framework as part of the standard ecosystem.
+Fonynは特定用途専用の言語ではないため、
+一般的なアプリケーション開発にも使用できるよう設計します。
+一方で、この設計は **ゲーム開発と非常に相性が良い**ため、
+ゲーム開発のためのフレームワークを標準で提供したいと考えています。
 
 ---
 
-# Design Philosophy
+# 設計思想
 
-Fonyn is built around the following three core concepts.
+Fonyn は次の 3 つの概念を中心に設計されています。
 
 ```
-
-actor   = entity
-state   = reusable data
-action  = reusable behavior
-
+actor   = 実体
+state   = 再利用可能なデータ
+action  = 再利用可能な振る舞い
 ````
 
-This model allows programs to express their structure more clearly.
+このモデルにより、プログラムの構造をより明確に表現できます。
 
 ---
 
-# Core Concepts
+# コア概念
 
-Fonyn introduces the following main concepts.
+Fonyn には次の主要概念があります。
 
-| Concept | Description |
-|--------|-------------|
-| actor | An entity that owns state and behavior |
-| state | A reusable data structure |
-| action | A reusable behavior that can be attached to actors |
-| contract | A capability contract visible from the outside |
-| process | External logic not belonging to an actor |
-| template | A template for creating actors |
+| 概念 | 説明 |
+|-----|-----|
+| actor | 状態と振る舞いを持つ実体 |
+| state | 再利用可能なデータ構造 |
+| action | actor に付与できる再利用可能な振る舞い |
+| contract | 外部から見える能力の約束 |
+| process | actor に属さない外部処理 |
+| template | actor の雛形 |
 
 ---
 
-# Example
+# 簡単な例
 
 ```fonyn
 state Health
@@ -66,60 +65,63 @@ actor Player
 }
 ````
 
-In this example:
+この例では
 
-* `Health` represents reusable data
-* `Damage` represents reusable behavior
-* `Player` is an entity composed from those parts
+* `Health` は再利用可能なデータ
+* `Damage` は再利用可能な振る舞い
+* `Player` はそれらを組み合わせた実体
 
----
-
-# Project Status
-
-Fonyn is currently in the **design and prototype stage**.
-
-The language specification is still evolving, and the compiler implementation is experimental.
-
-The current compiler is being developed using **C# / .NET**.
+を表しています。
 
 ---
 
-# Repository Structure
+# プロジェクトの状態
+
+Fonyn は現在 **設計および試作段階**です。
+
+言語仕様はまだ発展途中であり、
+コンパイラも実験的な実装となっています。
+
+現在のコンパイラは **C# / .NET** を用いて開発されています。
+
+---
+
+# リポジトリ構成
 
 ```
 Fonyn/
-├─ src/        compiler implementation
-├─ tests/      test code
-├─ docs/       documentation
-├─ examples/   example programs
+├─ src/        コンパイラ実装
+├─ tests/      テストコード
+├─ docs/       ドキュメント
+├─ examples/   サンプルコード
 └─ README.md
 ```
 
-Main documentation:
+主なドキュメント:
 
-* Language specification → `docs/spec`
-* Development roadmap → `docs/roadmap.md`
+* 言語仕様 → `docs/spec`
+* 開発ロードマップ → `docs/roadmap.md`
 
 ---
 
-# Development
+# 開発
 
-The Fonyn compiler is implemented in **C# / .NET**.
+Fonynのコンパイラは**C# / .NET**で実装されています。
 
-Requirements
+必要な環境
 
 ```
 .NET SDK
 Git
 ```
 
-Build
+ビルド
 
 ```
 dotnet build
 ```
 
-Run tests
+テスト
 
 ```
 dotnet test
@@ -127,9 +129,9 @@ dotnet test
 
 ---
 
-# Development Roadmap
+# 開発ロードマップ
 
-Planned implementation stages:
+現在予定している実装段階
 
 1. Lexer
 2. Parser
@@ -140,21 +142,21 @@ Planned implementation stages:
 
 ---
 
-# Contributing
+# コントリビューション
 
-Fonyn is an open source project.
+Fonyn はオープンソースプロジェクトです。
 
-Contributions are welcome, including:
+以下の貢献を歓迎します。
 
-* Opening issues
-* Language design discussions
-* Pull requests
-* Documentation improvements
+* Issue の作成
+* 言語設計の議論
+* Pull Request
+* ドキュメント改善
 
-In particular, **discussions about the language design are highly encouraged**.
+特に **言語仕様の設計議論**は大歓迎です。
 
 ---
 
-# License
+# ライセンス
 
 MIT License
