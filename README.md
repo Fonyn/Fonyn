@@ -1,4 +1,4 @@
-# Fonyn
+# Fonyn Spec v0.1
 
 Fonyn is a **general-purpose programming language**.
 
