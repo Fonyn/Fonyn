@@ -1,4 +1,4 @@
-# Fonyn Spec v0.1
+# Fonyn
 [日本語のREADMEはこちら](docs/README-ja.md)
 
 Fonyn is a **general-purpose programming language**.
