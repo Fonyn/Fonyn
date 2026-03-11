@@ -1,5 +1,6 @@
 # Fonyn Spec v0.1
-* [English readme is here](#README.md)
+[English readme is here](#README.md)
+
 Fonynは**汎用プログラミング言語**です。
 
 「実体」「状態」「振る舞い」を明確に分離する設計により、
