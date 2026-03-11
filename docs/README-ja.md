@@ -1,5 +1,5 @@
 # Fonyn Spec v0.1
-[English readme is here](#../README.md)
+[English readme is here](#README.md)
 
 Fonynは**汎用プログラミング言語**です。
 
