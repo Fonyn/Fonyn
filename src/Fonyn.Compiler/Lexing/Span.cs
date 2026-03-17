@@ -7,7 +7,7 @@ namespace Fonyn.Compiler.Lexing
     /// <summary>
     /// 範囲を記録する型
     /// </summary>
-    internal struct Span
+    public struct Span
     {
         public Span(int offset, int length)
         {

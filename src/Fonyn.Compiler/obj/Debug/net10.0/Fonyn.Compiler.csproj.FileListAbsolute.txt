@@ -1,6 +1,4 @@
-C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\bin\Debug\net10.0\Fonyn.Compiler.exe
 C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\bin\Debug\net10.0\Fonyn.Compiler.deps.json
-C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\bin\Debug\net10.0\Fonyn.Compiler.runtimeconfig.json
 C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\bin\Debug\net10.0\Fonyn.Compiler.dll
 C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\bin\Debug\net10.0\Fonyn.Compiler.pdb
 C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\obj\Debug\net10.0\Fonyn.Compiler.GeneratedMSBuildEditorConfig.editorconfig
@@ -11,5 +9,4 @@ C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\obj\Debug\ne
 C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\obj\Debug\net10.0\Fonyn.Compiler.dll
 C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\obj\Debug\net10.0\refint\Fonyn.Compiler.dll
 C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\obj\Debug\net10.0\Fonyn.Compiler.pdb
-C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\obj\Debug\net10.0\Fonyn.Compiler.genruntimeconfig.cache
 C:\Users\karot\free\Fonyn_File\MainProject\Fonyn\src\Fonyn.Compiler\obj\Debug\net10.0\ref\Fonyn.Compiler.dll

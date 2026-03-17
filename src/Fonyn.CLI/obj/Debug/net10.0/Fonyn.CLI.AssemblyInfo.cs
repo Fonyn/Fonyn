@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fonyn.CLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ab8ab9d0cdf041b137b92389eff94c705889b1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bbd1581860d8e6498cdfd2a8bbfc8efbd6d3d94")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fonyn.CLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fonyn.CLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
