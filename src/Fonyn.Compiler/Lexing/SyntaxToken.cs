@@ -13,18 +13,18 @@ internal abstract class SyntaxToken
     /// <summary>
     /// トークンのテキストを表すプロパティ。トークンが表す文字列を返す。
     /// </summary>
-    public string Text { get; }
+    public string Lexeme { get; }
 
     /// <summary>
     /// トークンの位置と幅を示すプロパティ。
     /// </summary>
-    public Span TextSpan { get; }
+    public Span LexemeSpan { get; }
 
-    protected SyntaxToken(SyntaxKind kind, string text, Span span)
+    protected SyntaxToken(SyntaxKind kind, string lexeme, Span span)
     {
         Kind = kind;
-        Text = text;
-        TextSpan = span;
+        Lexeme = lexeme;
+        LexemeSpan = span;
     }
 }
 
@@ -37,24 +37,24 @@ internal class EndOfFileToken : SyntaxToken
 
 internal class IdentifierToken : SyntaxToken
 {
-    public override string ToString() => $"IdentifierToken: {Text}";
-    public virtual string Value => Text;
+    public override string ToString() => $"IdentifierToken: {Lexeme}";
+    public virtual string Value => Lexeme;
 
-    public IdentifierToken(string text, Span span) : base(SyntaxKind.Identifier, text, span) { }
+    public IdentifierToken(string lexeme, Span span) : base(SyntaxKind.Identifier, lexeme, span) { }
 }
 
 internal class NumberToken : SyntaxToken
 {
-    public override string ToString() => $"NumberToken: {Text}";
-    public virtual double Value => double.Parse(Text);
-    public NumberToken(string text, Span span) : base(SyntaxKind.Number, text, span) { }
+    public override string ToString() => $"NumberToken: {Lexeme}";
+    public virtual double Value => double.Parse(Lexeme);
+    public NumberToken(string lexeme, Span span) : base(SyntaxKind.Number, lexeme, span) { }
 }
 
 internal class StringToken : SyntaxToken
 {
-    public override string ToString() => $"StringToken: {Text}";
-    public virtual string Value => Text;
-    public StringToken(string text, Span span) : base(SyntaxKind.String, text, span) { }
+    public override string ToString() => $"StringToken: {Lexeme}";
+    public virtual string Value => Lexeme;
+    public StringToken(string lexeme, Span span) : base(SyntaxKind.String, lexeme, span) { }
 }
 
 internal class PlusToken : SyntaxToken
@@ -167,12 +167,12 @@ internal class ReturnKeywordToken : SyntaxToken
 
 internal class WhitespaceToken : SyntaxToken
 {
-    public override string ToString() => $"WhitespaceToken: '{Text}'";
-    public WhitespaceToken(string text, Span span) : base(SyntaxKind.Whitespace, text, span) { }
+    public override string ToString() => $"WhitespaceToken: '{Lexeme}'";
+    public WhitespaceToken(string lexeme, Span span) : base(SyntaxKind.Whitespace, lexeme, span) { }
 }
 
 internal class InvalidToken : SyntaxToken
 {
-    public override string ToString() => $"InvalidToken: {Text}";
-    public InvalidToken(string text, Span span) : base(SyntaxKind.Invalid, text, span) { }
+    public override string ToString() => $"InvalidToken: {Lexeme}";
+    public InvalidToken(string lexeme, Span span) : base(SyntaxKind.Invalid, lexeme, span) { }
 }
