@@ -2,6 +2,8 @@
 [日本語のREADMEはこちら](docs/ja/README-ja.md)
 
 Fonyn is a **general-purpose programming language**.
+## Project Structure
+- Fonyn.Compiler : Core compiler implementation
 
 ### This project is in early development and may change significantly.
 
