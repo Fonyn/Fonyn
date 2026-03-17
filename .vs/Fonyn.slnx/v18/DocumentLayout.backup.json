@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\karot\\free\\Fonyn_File\\MainProject\\Fonyn\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67988729-31A5-4669-B015-AE90E9BBDB95}|tests\\Fonyn.Tests\\Fonyn.Tests.csproj|c:\\users\\karot\\free\\fonyn_file\\mainproject\\fonyn\\tests\\fonyn.tests\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67988729-31A5-4669-B015-AE90E9BBDB95}|tests\\Fonyn.Tests\\Fonyn.Tests.csproj|solutionrelative:tests\\fonyn.tests\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01EC305D-B593-4F31-882E-3BB1949DE683}|src\\Fonyn.CLI\\Fonyn.CLI.csproj|c:\\users\\karot\\free\\fonyn_file\\mainproject\\fonyn\\src\\fonyn.cli\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01EC305D-B593-4F31-882E-3BB1949DE683}|src\\Fonyn.CLI\\Fonyn.CLI.csproj|solutionrelative:src\\fonyn.cli\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\karot\\free\\Fonyn_File\\MainProject\\Fonyn\\tests\\Fonyn.Tests\\Program.cs",
+              "RelativeDocumentMoniker": "tests\\Fonyn.Tests\\Program.cs",
+              "ToolTip": "C:\\Users\\karot\\free\\Fonyn_File\\MainProject\\Fonyn\\tests\\Fonyn.Tests\\Program.cs",
+              "RelativeToolTip": "tests\\Fonyn.Tests\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:03:19.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\karot\\free\\Fonyn_File\\MainProject\\Fonyn\\src\\Fonyn.CLI\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Fonyn.CLI\\Program.cs",
+              "ToolTip": "C:\\Users\\karot\\free\\Fonyn_File\\MainProject\\Fonyn\\src\\Fonyn.CLI\\Program.cs",
+              "RelativeToolTip": "src\\Fonyn.CLI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:01:28.622Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/Fonyn.CLI/Fonyn.CLI.csproj" Id="01ec305d-b593-4f31-882e-3bb1949de683" />
+  <Project Path="src/Fonyn.Compiler/Fonyn.Compiler.csproj" Id="2c3a080c-fccf-4f6d-a4d3-adeb6f65d4ff" />
+  <Project Path="tests/Fonyn.Tests/Fonyn.Tests.csproj" Id="67988729-31a5-4669-b015-ae90e9bbdb95" />
+</Solution>
