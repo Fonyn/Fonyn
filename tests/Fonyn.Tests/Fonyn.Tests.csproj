@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Fonyn.Compiler\Fonyn.Compiler.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Lexing\" />
+    <Folder Include="Parsing\" />
+    <Folder Include="Syntax\" />
+  </ItemGroup>
+
 </Project>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fonyn.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1c64316be594151b01fa0206e12e4901c51890a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ab8ab9d0cdf041b137b92389eff94c705889b1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fonyn.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fonyn.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
