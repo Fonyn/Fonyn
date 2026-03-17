@@ -1,5 +1,5 @@
 # Fonyn
-[English README is here](../README.md)
+[English README is here](../../README.md)
 
 Fonynは**汎用プログラミング言語**です。
 
