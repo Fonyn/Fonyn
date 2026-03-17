@@ -3,7 +3,7 @@
 
 Fonyn is a **general-purpose programming language**.
 
-## This project is in early development and may change significantly.
+### This project is in early development and may change significantly.
 
 It aims to make program structure clearer by explicitly separating the concepts of **entities**, **state**, and **behavior**, and by making each of them reusable.
 
