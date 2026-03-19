@@ -195,5 +195,3 @@ Especially:
 # License
 
 MIT License
-
-```
