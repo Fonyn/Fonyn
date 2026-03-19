@@ -1,25 +1,24 @@
 # Fonyn
-[日本語のREADMEはこちら](docs/ja/README-ja.md)
+[日本語版はこちら](./docs/ja/README-ja.md)
+
+### ⚠ This project is in an early stage of development
 
 Fonyn is a **general-purpose programming language**.
 
-### This project is in early development and may change significantly.
+It aims to make programs more modular and reusable by clearly separating the concepts of:
+**entities**, **state**, and **behavior**.
 
-It aims to make program structure clearer by explicitly separating the concepts of **entities**, **state**, and **behavior**, and by making each of them reusable.
+Fonyn is not designed for a specific domain,
+and it is intended to be usable for general application development.
 
-Fonyn is not designed for a single specific domain.  
-It is intended to be usable for general application development as well.
+However, this design is **particularly well-suited for game development**,
+and in the future, we plan to provide a built-in framework for game development as part of the ecosystem.
 
-However, this design also works **particularly well for game development**, so we plan to provide a game development framework as part of the standard ecosystem.
-
-## Current Status
-- Lexer (in progress)
-- Parser (planned)
 ---
 
 # Design Philosophy
 
-Fonyn is built around the following three core concepts.
+Fonyn is built around the following three core concepts:
 
 ```
 
@@ -29,22 +28,23 @@ action  = reusable behavior
 
 ````
 
-This model allows programs to express their structure more clearly.
+This model enables clearer representation of program structure
+by separating responsibilities into distinct, composable components.
 
 ---
 
 # Core Concepts
 
-Fonyn introduces the following main concepts.
+Fonyn introduces the following key concepts:
 
 | Concept | Description |
-|--------|-------------|
+|--------|------------|
 | actor | An entity that owns state and behavior |
-| state | A reusable data structure |
-| action | A reusable behavior that can be attached to actors |
-| contract | A capability contract visible from the outside |
-| process | External logic not belonging to an actor |
-| template | A template for creating actors |
+| state | Reusable data structures |
+| action | Reusable behavior that can be attached to actors |
+| contract | A declaration of externally visible capabilities |
+| process | External logic not bound to an actor |
+| template | A blueprint for creating actors |
 
 ---
 
@@ -76,17 +76,28 @@ In this example:
 
 * `Health` represents reusable data
 * `Damage` represents reusable behavior
-* `Player` is an entity composed from those parts
+* `Player` is an entity composed of both
 
 ---
 
 # Project Status
 
-Fonyn is currently in the **design and prototype stage**.
+Fonyn is currently in the **design and prototyping phase**.
 
-The language specification is still evolving, and the compiler implementation is experimental.
+The language specification is still evolving,
+and the compiler implementation is experimental.
 
-The current compiler is being developed using **C# / .NET**.
+The compiler is being developed in **C# / .NET**.
+
+## Current Implementation Status
+
+* Lexer: In progress
+* Parser: Not implemented
+* AST: Not implemented
+* Semantic analysis: Not implemented
+* Code generation / Runtime: Not implemented
+
+Both the specification and implementation are subject to significant changes.
 
 ---
 
@@ -94,14 +105,26 @@ The current compiler is being developed using **C# / .NET**.
 
 ```
 Fonyn/
-├─ src/        compiler implementation
-├─ tests/      test code
-├─ docs/       documentation
-├─ examples/   example programs
+├─ src/
+│  ├─ Fonyn.CLI/        CLI entry point
+│  └─ Fonyn.Compiler/   Compiler core
+├─ tests/
+│  └─ Fonyn.Tests/      Test code
+├─ docs/
+│  ├─ ja/               Japanese documents
+│  └─ en/               English documents
 └─ README.md
 ```
 
-Main documentation:
+`Fonyn.Compiler` is currently divided into the following components:
+
+* **Lexing**: Tokenization
+* **Parsing**: Syntax analysis
+* **Syntax**: Syntax definitions
+* **Diagnostics**: Error and diagnostic handling
+
+Planned documentation:
+(not written yet)
 
 * Language specification → `docs/spec`
 * Development roadmap → `docs/roadmap.md`
@@ -112,20 +135,20 @@ Main documentation:
 
 The Fonyn compiler is implemented in **C# / .NET**.
 
-Requirements
+## Requirements
 
 ```
 .NET SDK
 Git
 ```
 
-Build
+## Build
 
 ```
 dotnet build
 ```
 
-Run tests
+## Test
 
 ```
 dotnet test
@@ -133,34 +156,44 @@ dotnet test
 
 ---
 
-# Development Roadmap
+# Roadmap
 
-Planned implementation stages:
+Development is planned in the following order:
 
 1. Lexer
 2. Parser
 3. AST
 4. Semantic Analysis
-5. C# Code Generation
+5. Code Generation
 6. Runtime
 
 ---
 
-# Contributing
+# About This Project
 
-Fonyn is an open source project.
+Fonyn is an ongoing project that explores both
+programming language design and compiler implementation.
 
-Contributions are welcome, including:
+At this stage, it should be considered a work-in-progress
+focused on evolving both the design and implementation.
 
-* Opening issues
-* Language design discussions
-* Pull requests
+---
+
+# Contribution
+
+Issues, pull requests, and design discussions are welcome.
+
+Especially:
+
+* Feedback on language design
+* Suggestions for naming or syntax
 * Documentation improvements
-
-In particular, **discussions about the language design are highly encouraged**.
+* Discussions on implementation strategy
 
 ---
 
 # License
 
 MIT License
+
+```
