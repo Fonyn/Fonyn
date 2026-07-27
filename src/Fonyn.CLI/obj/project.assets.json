@@ -27,40 +27,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\karot\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/karotte/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\karot\\free\\Fonyn_File\\MainProject\\Fonyn\\src\\Fonyn.CLI\\Fonyn.CLI.csproj",
+      "projectUniqueName": "/home/karotte/Development/Fonyn/src/Fonyn.CLI/Fonyn.CLI.csproj",
       "projectName": "Fonyn.CLI",
-      "projectPath": "C:\\Users\\karot\\free\\Fonyn_File\\MainProject\\Fonyn\\src\\Fonyn.CLI\\Fonyn.CLI.csproj",
-      "packagesPath": "C:\\Users\\karot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\karot\\free\\Fonyn_File\\MainProject\\Fonyn\\src\\Fonyn.CLI\\obj\\",
+      "projectPath": "/home/karotte/Development/Fonyn/src/Fonyn.CLI/Fonyn.CLI.csproj",
+      "packagesPath": "/home/karotte/.nuget/packages/",
+      "outputPath": "/home/karotte/Development/Fonyn/src/Fonyn.CLI/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\karot\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/karotte/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\karot\\free\\Fonyn_File\\MainProject\\Fonyn\\src\\Fonyn.Compiler\\Fonyn.Compiler.csproj": {
-              "projectPath": "C:\\Users\\karot\\free\\Fonyn_File\\MainProject\\Fonyn\\src\\Fonyn.Compiler\\Fonyn.Compiler.csproj"
+            "/home/karotte/Development/Fonyn/src/Fonyn.Compiler/Fonyn.Compiler.csproj": {
+              "projectPath": "/home/karotte/Development/Fonyn/src/Fonyn.Compiler/Fonyn.Compiler.csproj"
             }
           }
         }
@@ -75,7 +68,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
@@ -96,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.106/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
