@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fonyn.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cdc316a42285952c90f8cb89e8112d678dad240")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06f7335cc28d917d9c3a0a828b5975d79b93c7b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fonyn.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fonyn.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
